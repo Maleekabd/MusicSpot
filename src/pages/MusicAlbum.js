@@ -11,8 +11,8 @@ const options = {
     url: 'https://genius-song-lyrics1.p.rapidapi.com/album/details/',
     params: { id: '670828' },
     headers: {
-        'X-RapidAPI-Key': '70ede6e274msh8072cfc8f5a3e57p17874ejsnbffa1f9faa5d',
-        'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.X - RapidAPI - Key,
+        'X-RapidAPI-Host': process.env.X - RapidAPI - Host
     }
 };
 
@@ -23,7 +23,7 @@ const MusicAlbum = () => {
     const [loading, setLoading] = useState(true);
     const song_performances = music?.data?.album?.song_performances || [];
 
-    const {addToWhistlist} = useWhistlistContext();
+    const { addToWhistlist } = useWhistlistContext();
 
     // useEffect(() => {
     //     const saveWhistlist = JSON.parse(localStorage.getItem('wistlist') || '[]')
