@@ -1,55 +1,9 @@
-import { useRef } from "react";
-import KuruKuru from "./sound/kuru-kuru.mp3"
-import Herta from "./image/herta.gif"
-import { useState } from "react";
-import { motion } from "framer-motion"
-import UseReducerExcercise from "./useReducer";
 import MusicAlbum from "./pages/MusicAlbum";
 import { WhistlistProvider } from "./Store/whistlistContext";
 import Whistlist from "./pages/whistlist";
 
 
 export const App = () => {
-
-    const [clickCount, setClickCount] = useState(0);
-    const audioRef = useRef(null);
-
-    const imageVariants = {
-        hidden: {
-            opacity: 0,
-            x: "100%",
-        },
-        visible: {
-            opacity: 1,
-            x: "0%",
-            transition: {
-                duration: 0.5,
-            },
-        },
-    };
-
-
-
-    const HandleClickPlay = () => {
-        setClickCount(clickCount + 1)
-        if (audioRef.current) {
-            audioRef.current.currentTime = 0;
-            audioRef.current.play();
-        }
-    }
-    const HandleClickStop = () => {
-        if (audioRef.current) {
-            audioRef.current.pause();
-            audioRef.current.currentTime = 0;
-            setClickCount(0)
-        }
-    }
-
-    const HandleStop = () => {
-        if (audioRef.current.ended) {
-            setClickCount(0);
-        }
-    }
 
 
     return (

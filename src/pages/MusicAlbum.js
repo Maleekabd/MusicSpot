@@ -5,18 +5,7 @@ import Sidebar from '../components/sidebar';
 import Eminem from "../image/eminem.png";
 import { MdVerified } from "react-icons/md"
 import { useWhistlistContext } from '../Store/whistlistContext';
-
-const options = {
-    method: 'GET',
-    url: 'https://genius-song-lyrics1.p.rapidapi.com/album/details/',
-    params: { id: '670828' },
-    headers: {
-        'X-RapidAPI-Key': process.env.X - RapidAPI - Key,
-        'X-RapidAPI-Host': process.env.X - RapidAPI - Host
-    }
-};
-
-
+import { options } from '../options';
 const MusicAlbum = () => {
 
     const [music, SetMusic] = useState([]);
