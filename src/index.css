@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body {
+     font-family: "Poppins", "Open Sans", "Fira Code";
+     background-color: #272635;
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ h2 {
+     font-weight: bolder;
+     color: #CA054D;
+     text-align: center;
+ }
+
+ .parent {
+     background: rgba(255, 255, 255, 0.54);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(8.2px);
+     -webkit-backdrop-filter: blur(8.2px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     z-index: 20;
+ }
+
+ h4 {
+     text-align: center;
+     color: #171D1C;
+ }
+
+ .parentButton {
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ button {
+     margin-top: 20px;
+     outline: none;
+     border: none;
+     border-radius: 7px;
+     height: 40px;
+     width: 80px;
+     letter-spacing: 1px;
+     cursor: pointer;
+ }
+
+ button:hover {
+     color: white;
+     font-weight: bold;
+     background-color: black;
+ }
+
+ @media screen and (max-width: 320px) {
+     h2 {
+         font-size: 10px;
+     }
+
+     h4 {
+         font-size: 7px;
+     }
+
+     button {
+         margin-top: 10px;
+         outline: none;
+         border: none;
+         border-radius: 7px;
+         height: 10px;
+         width: 30px;
+         letter-spacing: 1px;
+         cursor: pointer;
+         font-size: 5px;
+     }
+
+     .parentButton {
+         display: flex;
+         flex-direction: row;
+         gap: 10px;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+
+     .kururin {
+         width: 50px;
+     }
+ }

@@ -1,22 +1,6 @@
-[
-    {
-        "id":1,
-        "name": "gitar akustik",
-        "harga": 400000
-    },
-    {
-        "id":2,
-        "name": "gitar listrik",
-        "harga": 120000
-    },
-    {
-        "id":3,
-        "name": "gitar hybdrid",
-        "harga": 500000
-    },
-    {
-        "id":4,
-        "name": "gitar kungkung",
-        "harga": 249000
-    }
-]
+{
+  "whistlist": [
+    [],
+    []
+  ]
+}
