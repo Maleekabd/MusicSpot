@@ -4,7 +4,7 @@ import { AiOutlineHeart } from "react-icons/ai"
 import Sidebar from '../components/sidebar';
 import Eminem from "../image/eminem.png";
 import { MdVerified } from "react-icons/md"
-import { useWhistlistContext } from '../Store/whistlistContext';
+import { UseWhistlistContext } from '../Store/whistlistContext';
 import { options } from '../options';
 const MusicAlbum = () => {
 
@@ -12,19 +12,7 @@ const MusicAlbum = () => {
     const [loading, setLoading] = useState(true);
     const song_performances = music?.data?.album?.song_performances || [];
 
-    const { addToWhistlist } = useWhistlistContext();
-
-    // useEffect(() => {
-    //     const saveWhistlist = JSON.parse(localStorage.getItem('wistlist') || '[]')
-    //     setWhistlist(saveWhistlist);
-    // }, [])
-
-    // const addToWhistlist = (item) => {
-    //     const updateWhistlist = [...whistlist, item]
-    //     setWhistlist(updateWhistlist);
-    //     localStorage.setItem('whistlist', JSON.stringify(updateWhistlist));
-    // }
-
+    const { addToWhistlist } = UseWhistlistContext();
 
     useEffect(() => {
         const fetchData = async () => {

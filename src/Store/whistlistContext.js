@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState } from 'react'
 
-const whistlistContext = createContext();
+const WhistlistContext = createContext();
 
-export const useWhistlistContext = () => {
-    return useContext(whistlistContext);
+export const UseWhistlistContext = () => {
+    return useContext(WhistlistContext);
 }
 
 export const WhistlistProvider = ({ children }) => {
@@ -18,8 +18,8 @@ export const WhistlistProvider = ({ children }) => {
         addToWhistlist
     }
 return (
-    <whistlistContext.Provider value={value}>
+    <WhistlistContext.Provider value={value}>
         {children}
-    </whistlistContext.Provider>
+    </WhistlistContext.Provider>
 )
 }

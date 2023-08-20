@@ -1,8 +1,7 @@
 import React from 'react'
-import { useWhistlistContext } from '../Store/whistlistContext'
-
+import { UseWhistlistContext } from '../Store/whistlistContext';
 const whistlist = () => {
-    const { whistlist } = useWhistlistContext();
+    const { whistlist } = UseWhistlistContext();
     return (
         <div>
             <h2>
