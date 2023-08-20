@@ -9,7 +9,7 @@ const sidebar = ({ children }) => {
                     <span
                         className="grid h-10 w-32 place-content-center rounded-lg  text-gray-600"
                     >
-                        <img className='w-20' src={Herta}/>
+                        <img alt='herta' className='w-20' src={Herta}/>
                     </span>
 
                     <ul className="mt-6 space-y-1">
